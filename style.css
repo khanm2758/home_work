@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+}
+html {
+    scroll-behavior: smooth;
+  }
+.container-fluid{
+  background-color: #333
+}
+.navbar{
+    text-transform: uppercase;
+    background-color: #333
+}
+ul li{
+    position: relative;
+}
+ul li a::after{
+    content: '';
+    color: #fff;
+   border: 1px solid #fff;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px ;
+    transform: scale(0,1);
+    transition: all ease-in-out .6s;
+    transform-origin: center
+}
+ul li a:hover::after{
+    transform: scale(1,1)
+}
+.cust_nav_collapse{
+   display: flex;
+   justify-content: center;
+}
+
+/* ////////////// carosal ///////////// */
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+/*////////////////// explore /////////////// */
+.sub__head{
+    position: relative;
+    padding-bottom: 1rem;
+}
+.sub__head > h2{
+    font-family: Audiowide, sans-serif;
+}
+.sub__head > h2::after{
+    content: "";
+    border: 1px solid #333;
+    position: absolute;
+    left: 5em;
+    right: 0px;
+    top: .7em
+
+}
